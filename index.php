@@ -33,29 +33,3 @@ require_once __DIR__ . '/models/Premium.php';
     </body>
 </html>
 <?php
-    class User{
-
-    }
-    class Products extends User {
-        // proprietà
-        public $id;
-        public $name;
-        public $sport;
-        public $accessory;
-        public $brand;
-        public $price;
-
-        // instazio un prodotto 
-        public function __construct($id, $name, $sport, $accessory, $brand, $price){
-            $this->id = $id;
-            $this->name = $name;
-            $this->sport = $sport;
-            $this->accessory = $accessory;
-            $this->brand = $brand;
-            $this->price = $price;  
-        }
-    }
-
-    $products1 = new Products("1", "Northwave Origin Plus", "Ciclismo", "Scarpe", "NW", "79.55");
-    var_dump($products1);
-?> 
